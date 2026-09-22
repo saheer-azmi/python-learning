@@ -1,12 +1,27 @@
 # Automatic Arithmetic Operations
-a = 10
-b = 5
 
-# Displaying all operations
-print(f"Addition: {a + b}")
-print(f"Subtraction: {a - b}")
-print(f"Multiplication: {a * b}")
-print(f"Division: {a / b}")
+# 1. Arithmetic 
+
+price=750
+quantity=4
+discount=200
+print(price*quantity-discount)
+
+price=750
+quantity=4
+discount=200
+print("multiplication(price*quantity-dicount)=",price*quantity-discount)
+
+print("\n1. Arithmetic Operators:")
+a = 15
+b = 4
+print("Addition (a + b) =", a + b)
+print("Subtraction (a - b) =", a - b)
+print("Multiplication (a * b) =", a * b)
+print("Division (a / b) =", a / b)
+print("Modulus (a % b) =", a % b)                             #reminder bachi hue value batai hai 
+print("Exponentiation (a ** b) =", a ** b)                    #powwer ke liye use hoti hai 
+print("Floor Division (a // b) =", a // b)                    #decimal part hata deta hai 
 
 
 #Basic calculator with operator choice
