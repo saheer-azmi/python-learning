@@ -1,4 +1,15 @@
-#automatic Arthmetic operator (Example)
+#Basic automatic Arthmetic operator (Example)
+
+a=22
+b=12
+print(f"addition:{a+b}")
+print(f"substraction:{a-b}")
+print(f"multiplication:{a*b}")
+print(f"divison:{a/b}")
+print(f"floor divison:{a//b}")
+print(f"modulus:{a%b}")
+
+
 bottels=8
 bear=45
 cream=8
@@ -12,7 +23,35 @@ print(f"multiplication:{bottels*bear*cream*mobile*cup*brush*dairy}")
 print(f"division:{bottels/bear/cream/mobile/cup/brush/dairy}")
 
 
-2#Basic calculator with operator choice
+
+# user-input-calculator - 
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+
+a=float(input("enter your first number:"))
+b=float(input("enter your second number:"))
+
+print(f"addition:{a+b}")
+print(f"substraction:{a-b}")
+print(f"multiplication:{a*b}")
+print(f"divison:{a/b}")
+print(f"floor division:{a//b}")
+print(f"modulus:{a%b}")
+print(f"power:{a**b}")
+
+
+
+
+
+
+
+
+3#Basic calculator with operator choice
 
 a = input("enter first number: ")
 b = input("Enter second number: ")
@@ -33,67 +72,35 @@ elif op == "/":
 else:
   print("Invalid operator")
 
-# Simple Arithmetic Operations - Step by Step
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
 
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
+#-logic if divison 0 agar b==0,hai to division mat karo..
 
-#Advanced Arithmetic Operations with Exponentiation and Floor Division
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+op = input("Enter operator (+, -, *, /): ")
 
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+if op == "+":
+    print("Result:", a + b)
 
-# Addition
-print(f"Addition: {a + b}")
+elif op == "-":
+    print("Result:", a - b)
 
-#Subtraction
-print(f"Subtraction: {a - b}")
+elif op == "*":
+    print("Result:", a * b)
 
-# Multiplication
-print(f"Multiplication: {a * b}")
+elif op == "/":
+    if b == 0:
+        print("Cannot divide by zero")
+    else:
+        print("Result:", a / b)
 
-# # Division
-print(f"Division: {a / b}")
-
-# # Exponentiation (Power)
-print(f"Exponentiation (a^b): {a ** b}")
-
-# # Floor Division (Quotient without remainder)
-print(f"Floor Division: {a // b}")
-
-# # Modulus (Remainder)
-print(f"Remainder: {a % b}")
-
-
-
-a=int(input("enter first number "))
-b=int(input("enter second number"))
-
-print(f"addition:{a+b}")
-print(f"subtraction:{a-b}")
-print(f"multiplication:{a*b}")
-print(f"division:{a/b}")
-
-a=9
-b=9
-
-print(f"addition:,{a+b}")
-print(f"subtraction:{a-b}")
-print(f"multiplication:{a*b}")
-print(f"division:{a/b}")
-
-
+else:
+    print("Invalid operator")
 
 a=int(input("enter first number"))
 b=int(input("enter second number"))
 op=(input("+,-,*,/"))
 
-a=int(a)
-b=int(b)
 
 if op=="+":
   print(f"result:{a+b}")
